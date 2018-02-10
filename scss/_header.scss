@@ -26,3 +26,49 @@
     font-size: 16px;
     margin-top: 5vh;
 }
+
+.widget {
+    height: 300px;
+    width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+    .header-text.large {
+        font-size: 16px;
+    }
+
+    .header-text.small {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        height: 100vh;
+        padding-top: 15vh;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .header-text.large {
+        font-size: 20px;
+    }
+
+    .header-text.small {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main-header {
+        justify-content: center;
+    }
+
+    .widget {
+        width: 300px;
+        margin-top: 5vh;
+    }
+}

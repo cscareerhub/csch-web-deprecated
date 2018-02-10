@@ -94,3 +94,14 @@
     margin-left: 10px;
     transition: 0.2s ease;
 }
+
+@media screen and (max-width: 500px) {
+    .nav-button {
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .nav-button-image {
+        display: none;
+    }
+}

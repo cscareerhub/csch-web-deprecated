@@ -1,0 +1,96 @@
+@import "variables",
+        "mixins";
+
+.main-nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 2vw;
+    justify-content: space-between;
+    @include unselectable;
+    box-shadow: 0 5px 10px -5px black;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo {
+    height: 60%;
+    transition: all .2s ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+}
+
+.nav-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 3vw;
+    color: $csch-color-dark;
+    transition: 0.15s ease;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        color: $csch-color-light;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: $csch-color-light;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+    }
+
+    &:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+.nav-button {
+    margin-left: 3vw;
+    color: $csch-color-dark;
+    transition: 0.15s ease;
+    border: 2px solid $csch-color-dark;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:hover {
+        cursor: pointer;
+        color: white;
+        border: 2px solid $csch-color-light;
+        background-color: $csch-color-light;
+
+        .nav-button-image {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.nav-button-image {
+    width: 20px;
+    margin-left: 10px;
+    transition: 0.2s ease;
+}

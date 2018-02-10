@@ -1,0 +1,47 @@
+@import "variables",
+        "mixins";
+
+.about-discord-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+}
+
+.about-discord-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    margin: 0 2vw;
+    text-align: center;
+}
+
+.about-discord-icon-container {
+    height: 150px;
+    width: 150px;
+    background-color: $csch-color-dark;
+    border-radius: 50%;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background-color: $csch-color-light;
+        cursor: pointer;
+    }
+}
+
+.about-discord-icon {
+    width: 90%;
+}
+
+.about-discord-description-heading {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}

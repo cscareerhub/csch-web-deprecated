@@ -1,0 +1,28 @@
+@import "variables",
+        "mixins";
+
+html, body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+  color: $general-font-color;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+  @include primary-font;
+}
+
+@media screen and (max-width: 1024px) {
+  h1, h2, h3, h4, h5, h6, p {
+    @include primary-font;
+    @include unselectable;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.highlight {
+  background-color: $site-gray;
+}

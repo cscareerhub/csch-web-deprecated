@@ -1,0 +1,28 @@
+.main-header {
+    height: 70vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+    padding-top: 20vh;
+}
+
+.header-text {
+    color: white;
+    font-weight: bold;
+    line-height: 1.25
+}
+
+.header-text.large {
+    font-size: 30px;
+}
+
+.header-text.small {
+    font-size: 16px;
+    margin-top: 5vh;
+}

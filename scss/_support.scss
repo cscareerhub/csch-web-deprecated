@@ -55,6 +55,22 @@
     }
 }
 
+.support-container .support-content-container:last-child .support-link-container:last-child {
+    @include disabled($site-gray, transparent, $site-gray);
+
+    a {
+        @include disabled($site-gray);
+    }
+
+    &:hover {
+        @include disabled($site-gray, transparent, $site-gray);
+
+        a {
+            @include disabled($site-gray);
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .support-container {
         flex-direction: column;

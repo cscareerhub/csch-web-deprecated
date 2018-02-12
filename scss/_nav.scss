@@ -53,6 +53,22 @@
     }
 }
 
+.nav-item-container a:nth-child(3) li {
+    @include disabled($site-gray);
+
+    &:hover {
+        @include disabled($site-gray);
+    }
+
+    &:before {
+        @include disabled($site-gray);
+    }
+
+    &:hover:before {
+        @include disabled($site-gray);
+    }
+}
+
 .nav-button {
     margin-left: 3vw;
     color: $csch-color-dark;

@@ -25,6 +25,13 @@
     user-select: none;
 }
 
+@mixin disabled($color: $site-gray, $background-color: transparent, $border-color: transparent) {
+    color: $color;
+    background-color: $background-color;
+    border-color: $border-color;
+    cursor: default;
+}
+
 @mixin link-animation {
     content: "";
     position: absolute;

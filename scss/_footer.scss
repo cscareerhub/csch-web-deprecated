@@ -80,10 +80,6 @@
     }
 }
 
-.footer-content-container.right a:nth-child(2) .footer-logo-container {
-    @include disabled($site-gray, $site-gray);
-}
-
 @media screen and (max-width: 425px) {
     .footer {
         flex-direction: column;

@@ -55,7 +55,7 @@
     }
 }
 
-.support-container .support-content-container:last-child .support-link-container:last-child {
+.support-link-container.disabled {
     @include disabled($site-gray, transparent, $site-gray);
 
     a {

@@ -1,10 +1,11 @@
 <div class="team-member">
     {% if include.pic == "none" %}
-        <img class="team-member-pic" src="{{base}}/images/team/discord-logo.png" />
+        <img class="team-member-pic bordered" src="{{base}}/images/team/discord-logo.png" />
     {% else %}
         <img class="team-member-pic" src="{{base}}/images/team/{{ include.pic }}" />
     {% endif %}
     <p class="team-member-name">{{ include.name }}</p>
     <p>{{ include.title }}</p>
     <p>{{ include.subtitle }}</p>
+    <div class="status {{ include.status }}"></div>
 </div>

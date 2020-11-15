@@ -6,6 +6,7 @@ html, body {
     width: 100vw;
     overflow-x: hidden;
     color: $general-font-color;
+    background-color: #f9f9f9;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, li {
@@ -25,4 +26,18 @@ h1, h2, h3, h4, h5, h6, p, a, li {
 
 .highlight {
     background-color: $site-gray;
+}
+
+h2.fancy {
+    font-size: 20px;
+    color: $csch-color-dark;
+    position: relative;
+
+    &:before {
+        @include link-animation;
+        @include link-hover-animation;
+        background-color: $csch-color-dark;
+        width: 105%;
+        margin-left: -2.5%;
+    }
 }

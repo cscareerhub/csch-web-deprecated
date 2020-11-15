@@ -41,8 +41,8 @@ h2.fancy.team {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     margin: 3vh 2vw;
     padding: 20px 0;
     // -webkit-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
@@ -55,10 +55,6 @@ h2.fancy.team {
     background-color: $discord-dark;
     color: $offwhite;
     position: relative;
-
-    .title {
-        margin-bottom: 5px;
-    }
 }
 
 .team-member-pic {
@@ -78,7 +74,6 @@ h2.fancy.team {
     // color: $csch-color-dark;
     color: $offwhite;
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .team-member-name.smallname {

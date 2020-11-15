@@ -3,6 +3,22 @@ h2.fancy.team {
     margin-bottom: 30px;
 }
 
+.owner {
+    color: red;
+}
+
+.admin {
+    color: red;
+}
+
+.head {
+    color: #00FF3E;
+}
+
+.mod {
+    color: #2FCC71;
+}
+
 .team-container {
     padding: 5vh 5vw;
     display: flex;
@@ -33,7 +49,8 @@ h2.fancy.team {
     -moz-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
     box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
     border-radius: 10px;
-    background-color: white;
+    background-color: #32363A;
+    color: #F9F9F9;
     position: relative;
 }
 
@@ -42,7 +59,7 @@ h2.fancy.team {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
-    background-color: white;
+    background-color: #F9F9F9;
 }
 
 .team-member-pic.bordered {
@@ -51,7 +68,8 @@ h2.fancy.team {
 }
 
 .team-member-name {
-    color: $csch-color-dark;
+    // color: $csch-color-dark;
+    color: #F9F9F9;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -64,7 +82,7 @@ h2.fancy.team {
     height: 20px;
     width: 20px;
     background-color: $csch-color-light;
-    border: 3px solid white;
+    border: 3px solid #32363A;
     border-radius: 50%;
     position: absolute;
     right: 60px;

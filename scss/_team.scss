@@ -12,7 +12,7 @@ h2.fancy.team {
 }
 
 .head {
-    color: #00FF3E;
+    color: $neon-green;
 }
 
 .mod {
@@ -26,7 +26,7 @@ h2.fancy.team {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    background-color: #f9f9f9;
+    background-color: $discord-darker;
 }
 
 .team-row {
@@ -45,12 +45,15 @@ h2.fancy.team {
     height: 200px;
     margin: 3vh 2vw;
     padding: 20px 0;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
-    box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
+    // -webkit-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
+    // -moz-box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
+    // box-shadow: 0px 0px 15px 0px rgba(219,219,219,1);
+    -webkit-box-shadow: 0 5px 10px -5px black;
+    -moz-box-shadow: 0 5px 10px -5px black;
+    box-shadow: 0 5px 10px -5px black;
     border-radius: 10px;
-    background-color: #32363A;
-    color: #F9F9F9;
+    background-color: $discord-dark;
+    color: $offwhite;
     position: relative;
 
     .title {
@@ -63,7 +66,7 @@ h2.fancy.team {
     height: 80px;
     border-radius: 50%;
     margin-bottom: 20px;
-    background-color: #F9F9F9;
+    background-color: $offwhite;
 }
 
 .team-member-pic.bordered {
@@ -73,7 +76,7 @@ h2.fancy.team {
 
 .team-member-name {
     // color: $csch-color-dark;
-    color: #F9F9F9;
+    color: $offwhite;
     font-size: 16px;
     margin-bottom: 10px;
 }

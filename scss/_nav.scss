@@ -12,7 +12,7 @@
     @include unselectable;
     box-shadow: 0 5px 10px -5px black;
     position: fixed;
-    background-color: white;
+    background-color: $discord-darker;
     z-index: 1;
 }
 
@@ -34,18 +34,18 @@
 
 .nav-item {
     margin-left: 3vw;
-    color: $csch-color-dark;
+    color: $offwhite;
     transition: 0.15s ease;
     position: relative;
 
     &:hover {
         cursor: pointer;
-        color: $csch-color-light;
+        color: $csch-color-dark;
     }
 
     &:before {
         @include link-animation;
-        background-color: $csch-color-light;
+        background-color: $csch-color-dark;
     }
 
     &:hover:before {
@@ -55,9 +55,9 @@
 
 .nav-button {
     margin-left: 3vw;
-    color: $csch-color-dark;
+    color: $offwhite;
     transition: 0.15s ease;
-    border: 2px solid $csch-color-dark;
+    border: 2px solid $offwhite;
     padding: 10px 20px;
     border-radius: 5px;
     transition: 0.2s ease;
@@ -67,9 +67,9 @@
 
     &:hover {
         cursor: pointer;
-        color: white;
-        border: 2px solid $csch-color-light;
-        background-color: $csch-color-light;
+        color: $discord-darker;
+        border: 2px solid $offwhite;
+        background-color: $offwhite;
 
         .nav-button-image {
             transform: rotate(360deg);

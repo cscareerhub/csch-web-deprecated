@@ -16,7 +16,7 @@
 title: CS Career Hub
 email: info@cscareerhackers.org
 description: > # this means to ignore newlines until "baseurl:"
-  Website for CS Career Hub, a community of software engineers on a mission of lifelong-learning
+  Website for CS Career Hub, a community of software engineers on a mission of lifelong learning
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: brendacs

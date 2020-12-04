@@ -1,7 +1,7 @@
 {
   "name": "CSCH",
   "version": "1.0.0",
-  "description": "Website for a community of software engineers on a mission of lifelong-learning",
+  "description": "Website for a community of software engineers on a mission of lifelong learning",
   "main": "Gruntfile.js",
   "devDependencies": {},
   "dependencies": {
